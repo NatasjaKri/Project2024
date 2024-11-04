@@ -41,11 +41,9 @@ nav {
 	width: 30px;
 	position: absolute;
 	border-radius: 2px;
+		/*Bruger border-radius til at afrunde kanterne for blødt look*/
 	transition: transform 1s;
 	}
-
-
-/*Bruger border-radius til at afrunde kanterne for blødt look*/
 
 .menu-icon::before {
 	content:"";
@@ -95,14 +93,19 @@ nav {
 		margin: 0;
 		padding:0;
 		transition: height 1s;
+		right:100px;
 		}
 	#menu-active:checked ~ .menu li {
 		height: 50px;
 		padding: 10px;
 		transition: height 1s;
+		right:100px;
 	}
 }
-
+header {
+	position:absolute;
+	left:100px;	
+}
 footer {
 	background-color: darkseagreen;
 	height: 200px
