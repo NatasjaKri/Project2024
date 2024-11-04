@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Margin sættes til 0 for at fjerne kanterne*/
+*{margin: 0;}
+
+nav {
+	background-color:#435A37;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 85px;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+.menu li {
+	color:floralwhite;
+	padding:15px;
+}
+.menu-box {
+	display:none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height:100%
+}
+
+/*burgermenu ikon*/
+.menu-icon, .menu-icon::before, .menu-icon::after {
+	display:block;
+	background-color: floralwhite;
+	height: 4px;
+	width: 30px;
+	position: absolute;
+	border-radius: 2px;
+	transition: transform 1s;
+	}
+/*Bruger border-radius til at afrunde kanterne for blødt look*/
+
+.menu-icon::before {
+	content:"";
+	margin-top: -8px;
+}
+.menu-icon::after {
+	content:"";
+	margin-top: 8px;
+}
+
+#menu-active:checked + .menu-box .menu-icon::before {
+	margin-top: 0;
+	transform:rotate(45deg);
+}
+#menu-active:checked + .menu-box .menu-icon::after {
+	margin-top: 0;
+	transform:rotate(-45deg);
+}
+#menu-active:checked + .menu-box .menu-icon {
+	background-color: rgba(0,0,0,0)
+}
+#menu-active { display:none;} 	/*usynlig checkboks*/
+
+/*skærm tilpasning*/
+@media screen and (max-width: 700px) {
+	.menu-box {display:inline-flex;}
+	.menu {
+		position:absolute;
+		top:0;
+		left:0;
+		margin-top: 85px;
+		background-color: darkseagreen;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	#menu-active ~.menu li{
+		height: 0;
+		margin: 0;
+		padding:0;
+		transition: height 1s;
+		}
+	#menu-active:checked ~ .menu li {
+		height: 50px;
+		padding: 10px;
+		transition: height 1s;
+	}
+}
+
+
+
+
+
+
+
+
+
