@@ -11,27 +11,27 @@ nav {
 	justify-content: space-between;
 	height: 85px;
 	align-items: center;
-}
+	}
 
 .menu {
-	display: flex;
+	display:flex;
 	flex-direction: row;
 	list-style-type: none;
 	position:sticky;
 	
-}
+	}
 
 .menu li {
 	color:floralwhite;
 	padding:15px;
-}
+	}
 .menu-box {
 	display:none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height:100%
-}
+	}
 
 /*burgermenu ikon*/
 .menu-icon, .menu-icon::before, .menu-icon::after {
@@ -48,31 +48,70 @@ nav {
 .menu-icon::before {
 	content:"";
 	margin-top: -8px;
-}
+	}
 .menu-icon::after {
 	content:"";
 	margin-top: 8px;
-}
+	}
 
 
 #menu-active:checked + .menu-box .menu-icon::before {
 	margin-top: 0;
 	transform:rotate(45deg);
-}
+	}
 #menu-active:checked + .menu-box .menu-icon::after {
 	margin-top: 0;
 	transform:rotate(-45deg);
-}
+	}
 #menu-active:checked + .menu-box .menu-icon {
 	background-color: rgba(0,0,0,0)
-}
+	}
 #menu-active { display:none;} 	/*usynlig checkboks*/
+.menu-box { display:none;}
 
+/*Frontpage images*/
 .frontimg {
 	margin-left: 40px;
-	margin-right: 40px;
+	margin-right: 40px;	
+	max-height: 300px;
+	}
+
+/*Header = navigationsbar*/
+header {
+	position:absolute;
+	left:100px;	
+	}
+
+/*Box med skiftende billede eksempler*/
+.flexbox { 
+	background-color: darkseagreen;
+	display:flex;
+	flex-direction: row;
+	flex-flow:row;
+	height: 400px;	
+	}
+.flexbox img{
+	background-color:floralwhite;
+	margin:5px;
+	padding: 10px;
+	max-height: 350px;
+	align-items:flex-end;
+}
+/*Grid med Nature-enthusiast*/
+.grid {
+	
 	
 }
+
+
+/*Footer med kontaktinfo i bunden*/
+footer, .push {
+	height: 200px
+	}
+
+footer {
+	background-color: darkseagreen;
+	}
 
 /*skærm tilpasning*/
 @media screen and (max-width: 700px) {
@@ -93,27 +132,13 @@ nav {
 		margin: 0;
 		padding:0;
 		transition: height 1s;
-		right:100px;
 		}
 	#menu-active:checked ~ .menu li {
 		height: 50px;
 		padding: 10px;
 		transition: height 1s;
-		right:100px;
 	}
-}
-header {
-	position:absolute;
-	left:100px;	
-}
-footer {
-	background-color: darkseagreen;
-	height: 200px
-	
-}
-
-
-
+	}
 
 
 
