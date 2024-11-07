@@ -68,17 +68,8 @@ nav {
 #menu-active:checked + .menu-box .menu-icon {
 	background-color: rgba(0,0,0,0)
 	}
-#menu-active { display:none;} 	/*usynlig checkboks*/
+#menu-active{ display:none;} 	/*usynlig checkboks*/
 .menu-box { display:none;}
-
-/*Frontpage images------------------------------*/
-.frontimg {
-	background-color: floralwhite;
-	margin-left: 10px;
-	margin-right: 10px;	
-	border-top:30px;
-	border-top-color: darkolivegreen;
-	}
 
 /*Header = navigationsbar tekst----------------*/
 header {
@@ -86,58 +77,95 @@ header {
 	left:100px;	
 	}
 
-/*Box med billede eksempler--------------------
-.flexbox { 
-	background-color: darkseagreen;
-	display:flex;
-	flex-direction: row;
-	flex-flow: row;
-	height: 400px;	
-	align-content:center;
+/*Frontpage images------------------------------*/
+.frontimg {
+	display:contents;
+	background-color: solid floralwhite;
+	margin-left: 10px;
+	margin-right: 10px;
+	
 	}
-
-.flexbox img{
-	background-color:floralwhite;
-	margin:5px;
-	margin-top: 15px;
-	padding: 10px;
-	max-height: 350px;
-	align-items:center;
-	justify-content: center;
-	}
-*/
 
 .maintext {
+	background-color:white;
 	padding-left: 30px;
 	padding-right: 30px;
 }
-/*Boks med nature-enthusiat billeder------------*/
-.grid, img {
-		background-color:#C9D7BC;
-		display: grid;
-		grid-template-columns:1fr 1fr 1fr;
-		grid-template-rows: 210px 225px;
-		gap: 10px 30px;
-		flex-flow: wrap;
-		align-items:baseline;
-		}
-.grid img {	
-		padding:3px;
-		margin:15px;
-		border: 3px solid floralwhite;
-		border-radius:20px;
-		}
 
-.item1 { 
-		
-		padding-left: 50px;
-		padding-top: 50px;
-		margin: 10px;
-		}
-.grid2{
-	background-color: antiquewhite;
-	
+/*Nature-creature box-----------------------------*/
+.grid1{
+	background-color:#C9D7BC;
+	display:grid;
+	grid-template-columns: 620px 280px 100px;
+	grid-template-rows:210px 200px;
+	gap:10px 20px;
 }
+
+.grid1 img {
+	background-color:#C9D7BC;
+	padding:0px;
+	margin:10px;
+	border:5px solid floralwhite;
+	align-self:baseline;
+	border-radius: 10px;	
+	}
+.NEtext,.pic1 {
+	grid-column: -3/ span -2;
+	grid-row: 1/ span 3;
+}
+.NEtext {
+	background-color: #C9D7BC;
+	display:block;
+	align-self:flex-start;
+	height: 300px;
+	margin:10px;
+	padding: 50px;
+	border: none;
+	margin-right:20px ;
+	margin-left:50px ;
+	}
+.pic1 {
+	margin-rigth:20px;
+}
+
+
+/*Dragon box-------------------------------*/
+.grid2{
+	background-color:#E3EADD;
+	display:grid;
+	grid-template-columns: 550px 300px 300px;
+	grid-template-rows:210px 200px;
+	gap:10px 20px;
+	border-top:5px solid #9EAF8F;
+}
+
+.grid2 img {
+	background-color:#C9D7BC;
+	padding:0px;
+	margin:10px;
+	border:5px solid floralwhite;
+	align-self:baseline;
+	border-radius: 10px;	
+	}
+.dragontext,.pic2 {
+	grid-column: -1/ span -2;
+	grid-row: 1/ span 3;
+}
+.dragontext {
+	background-color: #C9D7BC;
+	display:block;
+	align-self:flex-start;
+	height: 300px;
+	margin:10px;
+	padding: 50px;
+	border: none;
+	margin-right:-50px ;
+	}
+.pic2 {
+	margin-rigth:100px;
+}
+
+
 
 /*Footer med kontaktinfo i bunden----------------*/
 footer, .push {
@@ -175,9 +203,10 @@ footer {
 		transition: height 1s;
 		}
 }
-/*----------------------------------------------------*/
+
+/*----------------------------------------------------
 @media screen and (max-width:700px){
-	/*Grid med Nature-enthusiast*/
+	/*Grid med Nature-enthusiast
 	.grid {
 		background-color:#C9D7BC;
 		display: grid;
@@ -193,7 +222,6 @@ footer {
 		display:flex;
 		align-items: flex-end;
 		justify-content: space-around;
-		position:;
 		}
 	.item1 { 
 		padding-left: 20px;
@@ -201,7 +229,7 @@ footer {
 		margin: 10px;
 		
 		}
-}
+*/
 
 
 
