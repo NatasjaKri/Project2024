@@ -44,6 +44,7 @@ nav {
 	border-radius: 2px;
 		/*Bruger border-radius til at afrunde kanterne for blødt look*/
 	transition: transform 1s;
+	margin-right:80px;
 	}
 
 .menu-icon::before {
@@ -72,9 +73,11 @@ nav {
 
 /*Frontpage images------------------------------*/
 .frontimg {
-	margin-left: 40px;
-	margin-right: 40px;	
-	max-height: 300px;
+	background-color: floralwhite;
+	margin-left: 10px;
+	margin-right: 10px;	
+	border-top:30px;
+	border-top-color: darkolivegreen;
 	}
 
 /*Header = navigationsbar tekst----------------*/
@@ -83,7 +86,7 @@ header {
 	left:100px;	
 	}
 
-/*Box med billede eksempler--------------------*/
+/*Box med billede eksempler--------------------
 .flexbox { 
 	background-color: darkseagreen;
 	display:flex;
@@ -102,34 +105,39 @@ header {
 	align-items:center;
 	justify-content: center;
 	}
+*/
+
 .maintext {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 /*Boks med nature-enthusiat billeder------------*/
-.grid {
+.grid, img {
 		background-color:#C9D7BC;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 200px 200px;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows: 210px 225px;
 		gap: 10px 30px;
 		flex-flow: wrap;
+		align-items:baseline;
 		}
-	.grid img { 
-		background-color: floralwhite;
-		padding:5px;
+.grid img {	
+		padding:3px;
 		margin:15px;
-		border:2px solid #A4BB8E;
-		display:flex;
-		align-items: flex-end;
+		border: 3px solid floralwhite;
+		border-radius:20px;
 		}
-	.item1 { 
-		grid-column: 1/ span 2;
-		grid-row: 1/ span 2;
-		padding-left: 20px;
-		padding-top: 20px;
+
+.item1 { 
+		
+		padding-left: 50px;
+		padding-top: 50px;
 		margin: 10px;
 		}
+.grid2{
+	background-color: antiquewhite;
+	
+}
 
 /*Footer med kontaktinfo i bunden----------------*/
 footer, .push {
