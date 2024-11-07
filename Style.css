@@ -11,6 +11,7 @@ nav {
 	justify-content: space-between;
 	height: 85px;
 	align-items: center;
+	
 	}
 
 .menu {
@@ -102,16 +103,23 @@ header {
 	background-color:#C9D7BC;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+	grid-template-rows: 200px 200px;
 	gap: 10px 30px;
 }
-.grid p { 
+.grid img { 
 	background-color: floralwhite;
 	padding:5px;
-	margin:1px;
-	border:1px solid floralwhite;
+	margin:15px;
+	border:2px solid #A4BB8E;
+	display:flex;
+	align-items: flex-end;
+	
 }
-
+.item1 {
+	grid-column: 1/ span 1;
+	
+	
+}
 
 /*Footer med kontaktinfo i bunden*/
 footer, .push {
