@@ -117,8 +117,7 @@ header {
 }
 .item1 {
 	grid-column: 1/ span 1;
-	
-	
+	display:;
 }
 
 /*Footer med kontaktinfo i bunden*/
