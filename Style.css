@@ -11,7 +11,6 @@ nav {
 	justify-content: space-between;
 	height: 85px;
 	align-items: center;
-	
 	}
 
 .menu {
@@ -32,11 +31,11 @@ nav {
 	height:100%
 	}
 
-/*Skifter farven på links i menu*/
+/*Skifter farven og stil på links i menu------------------*/
 .menu a {
 	color:floralwhite;
 	text-decoration: none;
-	font-family: "chill-script", sans-serif;
+	font-family: "alda", sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	}
@@ -49,11 +48,10 @@ nav {
 	width: 30px;
 	position: absolute;
 	border-radius: 2px;
-		/*Bruger border-radius til at afrunde kanterne for blødt look*/
 	transition: transform 1s;
 	margin-right:80px;
 	}
-
+/*Overgang fra linjer til kryds--------------------------*/
 .menu-icon::before {
 	content:"";
 	margin-top: -8px;
@@ -62,7 +60,6 @@ nav {
 	content:"";
 	margin-top: 8px;
 	}
-
 
 #menu-active:checked + .menu-box .menu-icon::before {
 	margin-top: 0;
@@ -84,13 +81,17 @@ nav {
 	border:3px solid #293722;
 	}
 
-/*Header = navigationsbar tekst----------------*/
+/*Header = navigationsbar tekst------------------------*/
 header {
 	position:absolute;
 	left:100px;	
+	font-family:"alda",'impact','san-serif';
+	font-weight:700;
+	font-style:normal;
+	color:floralwhite;
 	}
 
-/*Frontpage images------------------------------*/
+/*Frontpage billede------------------------------*/
 .frontimg {
 	display:flex;
 	background-color: solid darkseagreen;
@@ -235,7 +236,9 @@ footer {
 	background-color: darkseagreen;
 	padding-left: 30px;
 	}
-/*-----------------------------------------------*/
+
+
+/*Font stil ændringer-----------------------------------*/
 a {
 	font-family: "Cambria", 'Hoefler Text', 'Liberation Serif', 'Times New Roman', 'serif';
 	font-weight: normal;
@@ -248,16 +251,11 @@ p {
 	padding-left: 20px;
 	}
 
-header {
-	font-family:"alda",'impact','san-serif';
-	font-weight:700;
-	font-style:normal;
-	color:floralwhite;
-}
 h1{
 	font-family:"alda",'impact','san-serif';
 	color: #23391E
 }
+/*----------------------------------------------*/
 .responsive {
 	width: 100%;
 	min-width:700px;
@@ -266,7 +264,9 @@ h1{
 }
 /*skærm tilpasning-------------------------------*/
 @media screen and (max-width: 700px) {
-	.menu-box {display:flex;}
+	.menu-box {
+		display:flex;
+		}
 	.menu {
 		position:absolute;
 		top:0;
@@ -277,7 +277,7 @@ h1{
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-	}
+		}
 	#menu-active ~.menu li{
 		height: 0;
 		margin: 0;
@@ -291,8 +291,7 @@ h1{
 		}
 }
 
-}
-/*--------------------------------------*/
+/*-tilpasning af billeder---------------------------------*/
 @media screen and (max-width: 700px){
 	.responsive {
 		background-color: white;
