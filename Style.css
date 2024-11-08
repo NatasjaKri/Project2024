@@ -92,10 +92,10 @@ header {
 
 /*Frontpage images------------------------------*/
 .frontimg {
-	display:contents;
-	background-color: solid floralwhite;
-	margin-left: 10px;
-	margin-right: 10px;
+	display:flex;
+	background-color: solid darkseagreen;
+	border-top:3px solid #35472B; /*darker green shade of nav*/
+	padding-top:15px;
 	
 	}
 
